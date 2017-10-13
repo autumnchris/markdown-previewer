@@ -26,7 +26,7 @@ export default class App extends Component {
         <main>
           <Tabs defaultActiveKey={1} animation={false} id="tabs">
             <Tab eventKey={1} title=" Edit">
-              <textarea className="form-control" rows="20" onChange={() => this.handleChange(event)} value={this.state.markdownInput} />
+              <textarea className="form-control" rows="20" onChange={this.handleChange.bind(this)} value={this.state.markdownInput} />
             </Tab>
             <Tab eventKey={2} title=" Preview">
               <div dangerouslySetInnerHTML={{__html: marked(this.state.markdownInput)}} id="preview"></div>
