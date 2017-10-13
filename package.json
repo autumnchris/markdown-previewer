@@ -4,6 +4,7 @@
   "description": "My Build a Markdown Previewer project for the Data Visualization Certification on Free Code Camp.",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm run start && gh-pages -d start",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,13 +17,14 @@
   "bugs": {
     "url": "https://github.com/autumnchris/markdown-previewer/issues"
   },
-  "homepage": "https://github.com/autumnchris/markdown-previewer#readme",
+  "homepage": "https://autumnchris.github.io/markdown-previewer",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "extract-text-webpack-plugin": "^2.0.0",
+    "gh-pages": "^1.0.0",
     "marked": "^0.3.6",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
