@@ -29,7 +29,7 @@ export default class App extends Component {
               <textarea className="form-control" rows="20" onChange={() => this.handleChange(event)} value={this.state.markdownInput} />
             </Tab>
             <Tab eventKey={2} title=" Preview">
-              <div></div>
+              <div dangerouslySetInnerHTML={{__html: marked(this.state.markdownInput)}} id="preview"></div>
             </Tab>
           </Tabs>
         </main>
