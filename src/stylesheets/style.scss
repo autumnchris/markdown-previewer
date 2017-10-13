@@ -1,0 +1,89 @@
+$dark-gray: #333;
+$med-gray: #ccc;
+$light-gray: #f2f2f2;
+$white: #fff;
+$blue: #396bac;
+
+textarea.form-control {
+  background-color: $dark-gray;
+  color: $white;
+  font-family: monospace;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: $blue;
+}
+
+hr {
+  border-top: 1px solid $med-gray;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  body {
+    color: $dark-gray;
+    letter-spacing: 1px;
+    min-height: 100%;
+    padding-bottom: 60px;
+    position: relative;
+    .container-fluid {
+      padding: 0 20px;
+      #app-heading {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 5px;
+      }
+      #tabs {
+        margin: 28px auto 0;
+        max-width: 800px;
+        .nav-tabs {
+          background-color: $light-gray;
+          border-bottom: 1px solid $med-gray;
+          padding: 10px 0 0 10px;
+          li.active a,
+          li.active a:hover {
+            background-color: $white;
+            border: 1px solid $med-gray;
+            border-bottom: transparent !important;
+          }
+          li a {
+            border: none;
+            border-radius: 0;
+            color: $dark-gray;
+            padding: 12px;
+          }
+          li a:hover {
+            background-color: $light-gray;
+          }
+          li:first-child a:before {
+            content: "\f121";
+            font-family: FontAwesome;
+          }
+          li:nth-child(2) a:before {
+            content: "\f06e";
+            font-family: FontAwesome;
+          }
+        }
+      }
+      footer {
+        background-color: $light-gray;
+        bottom: 0;
+        font-size: 1.2rem;
+        left: 0;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 12px 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+      }
+    }
+  }
+}
