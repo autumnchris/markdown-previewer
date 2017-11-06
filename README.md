@@ -19,3 +19,14 @@ My Build a Markdown Previewer project for the Data Visualization Certification o
 ## Demo
 
 View project [here](https://autumnchris.github.io/markdown-previewer).
+
+## Installation
+
+```
+git clone https://github.com/autumnchris/markdown-previewer.git
+cd dashboard
+npm install
+npm start
+```
+
+Go to [http://localhost:8080](http://localhost:8080)
