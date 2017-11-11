@@ -1,6 +1,6 @@
 # Markdown Previewer
 
-My Build a Markdown Previewer project for the Data Visualization Certification on [Free Code Camp](https://www.freecodecamp.org).
+My project for the [Build a Markdown Previewer challenge](https://www.freecodecamp.org/challenges/build-a-markdown-previewer) as part of the curriculum for the Data Visualization Certification on [Free Code Camp](https://www.freecodecamp.org).
 
 ---
 
