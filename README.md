@@ -24,7 +24,7 @@ View project [here](https://autumnchris.github.io/markdown-previewer).
 
 ```
 git clone https://github.com/autumnchris/markdown-previewer.git
-cd dashboard
+cd markdown-previewer
 npm install
 npm start
 ```
