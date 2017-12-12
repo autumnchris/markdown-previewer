@@ -4,14 +4,16 @@ My project for the [Build a Markdown Previewer challenge](https://www.freecodeca
 
 ---
 
+## User Stories
+1. I can type GitHub-flavored Markdown into a text area.
+2. I can see a preview of the output of my markdown that is updated as I type.
+
 ## Built With
 * [React](https://reactjs.org)
 * [Webpack](https://webpack.js.org)
 * [Babel](https://babeljs.io)
-* SCSS
-* [Bootstrap 3 CSS](https://getbootstrap.com/docs/3.3/css)
-
-## Other Tools Used
+* Sass
+* [Bootstrap](https://getbootstrap.com)
 * [marked](https://www.npmjs.com/package/marked)
 * [React-Bootstrap](https://react-bootstrap.github.io)
 * [Font Awesome](http://fontawesome.io)
