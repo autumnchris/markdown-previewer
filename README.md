@@ -20,7 +20,7 @@ My project for the [Build a Markdown Previewer challenge](https://www.freecodeca
 
 ## Demo
 
-View project [here](https://autumnchris.github.io/markdown-previewer).
+View project demo at [https://autumnchris.github.io/markdown-previewer](https://autumnchris.github.io/markdown-previewer).
 
 ## Installation
 
@@ -31,4 +31,4 @@ npm install
 npm start
 ```
 
-Go to [http://localhost:8080](http://localhost:8080).
+Go to `http://localhost:8080`.
