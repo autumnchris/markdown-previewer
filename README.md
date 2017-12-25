@@ -12,7 +12,7 @@ My project for the [Build a Markdown Previewer challenge](https://www.freecodeca
 * [React](https://reactjs.org)
 * [Webpack](https://webpack.js.org)
 * [Babel](https://babeljs.io)
-* Sass
+* [Sass](http://sass-lang.com)
 * [Bootstrap](https://getbootstrap.com)
 * [marked](https://www.npmjs.com/package/marked)
 * [React-Bootstrap](https://react-bootstrap.github.io)
