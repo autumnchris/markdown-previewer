@@ -25,10 +25,10 @@ View project demo at [https://autumnchris.github.io/markdown-previewer](https://
 ## Installation
 
 ```
-git clone https://github.com/autumnchris/markdown-previewer.git
-cd markdown-previewer
-npm install
-npm start
+$ git clone https://github.com/autumnchris/markdown-previewer.git
+$ cd markdown-previewer
+$ npm install
+$ npm start
 ```
 
 Go to `http://localhost:8080`.
