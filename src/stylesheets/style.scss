@@ -12,10 +12,6 @@ a:focus {
   color: $blue;
 }
 
-hr {
-  border-top: 1px solid $med-gray;
-}
-
 html {
   box-sizing: border-box;
   height: 100%;
@@ -72,6 +68,16 @@ html {
         }
         #preview {
           margin-top: 20px;
+          hr {
+            border-top: 1px solid $med-gray;
+          }
+          th {
+            background-color: $light-gray;
+          }
+          th, td {
+            border: 1px solid $med-gray;
+            padding: 8px;
+          }
         }
       }
       footer {
