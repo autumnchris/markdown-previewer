@@ -46,9 +46,9 @@ html {
             border-radius: 0;
             color: $dark-gray;
             padding: 12px;
-          }
-          li a:hover {
-            background-color: $light-gray;
+            &:hover {
+              background-color: $light-gray;
+            }
           }
           li:first-child a:before {
             content: "\f121";
