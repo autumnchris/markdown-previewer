@@ -4,6 +4,10 @@ $light-gray: #f2f2f2;
 $white: #fff;
 $blue: #396bac;
 
+* {
+  box-sizing: border-box;
+}
+
 a,
 a:visited,
 a:hover,
@@ -13,7 +17,6 @@ a:focus {
 }
 
 html {
-  box-sizing: border-box;
   height: 100%;
   body {
     color: $dark-gray;
