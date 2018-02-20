@@ -16,7 +16,7 @@ My project for the [Build a Markdown Previewer challenge](https://www.freecodeca
 * [Bootstrap](https://getbootstrap.com)
 * [marked](https://www.npmjs.com/package/marked)
 * [React-Bootstrap](https://react-bootstrap.github.io)
-* [Font Awesome](http://fontawesome.io)
+* [Font Awesome](https://fontawesome.com)
 
 ## Demo
 
