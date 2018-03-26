@@ -26,12 +26,12 @@ html {
     position: relative;
     .container-fluid {
       padding: 0 20px;
-      #app-heading {
+      .app-heading {
         font-size: 2rem;
         font-weight: 300;
         letter-spacing: 5px;
       }
-      #tabs {
+      .tabs {
         margin: 28px auto 0;
         max-width: 800px;
         .nav-tabs {
@@ -69,7 +69,7 @@ html {
           letter-spacing: 2px;
           margin-top: 15px;
         }
-        #preview {
+        .preview {
           margin-top: 20px;
           hr {
             border-top: 1px solid $med-gray;

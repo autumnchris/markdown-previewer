@@ -21,15 +21,15 @@ export default class App extends Component {
     return (
       <div className="container-fluid">
         <header>
-          <h1 className="text-center" id="app-heading">Markdown Previewer</h1>
+          <h1 className="text-center app-heading">Markdown Previewer</h1>
         </header>
         <main>
-          <Tabs defaultActiveKey={1} animation={false} id="tabs">
+          <Tabs className="tabs" defaultActiveKey={1} animation={false}>
             <Tab eventKey={1} title=" Edit">
               <textarea className="form-control" rows="20" aria-label="type GitHub Flavored Markdown text" onChange={this.handleChange.bind(this)} value={this.state.markdownInput} />
             </Tab>
             <Tab eventKey={2} title=" Preview">
-              <div dangerouslySetInnerHTML={{__html: marked(this.state.markdownInput)}} id="preview"></div>
+              <div className="preview" dangerouslySetInnerHTML={{__html: marked(this.state.markdownInput)}}></div>
             </Tab>
           </Tabs>
         </main>
