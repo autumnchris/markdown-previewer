@@ -2,7 +2,9 @@ $dark-gray: #333;
 $med-gray: #ccc;
 $light-gray: #f2f2f2;
 $white: #fff;
-$blue: #396bac;
+$blue: #0366d6;
+
+$edit-font: Menlo, Courier, monospace;
 
 * {
   box-sizing: border-box;
@@ -28,10 +30,10 @@ html {
       padding: 0 20px;
       .app-heading {
         font-size: 2rem;
-        font-weight: 300;
-        letter-spacing: 5px;
+        font-weight: 500;
+        letter-spacing: 2px;
       }
-      .tabs {
+      #tabs {
         margin: 28px auto 0;
         max-width: 800px;
         .nav-tabs {
@@ -39,18 +41,24 @@ html {
           border-bottom: 1px solid $med-gray;
           padding: 10px 0 0 10px;
           li.active a,
-          li.active a:hover {
+          li.active a:hover,
+          li.active a:active,
+          li.active a:focus {
             background-color: $white;
             border: 1px solid $med-gray;
             border-bottom: transparent !important;
           }
-          li a {
+          li a,
+          li a:active {
             border: none;
             border-radius: 0;
             color: $dark-gray;
             padding: 12px;
             &:hover {
               background-color: $light-gray;
+            }
+            &:focus {
+              outline: none;
             }
           }
           li:first-child a:before {
@@ -65,7 +73,7 @@ html {
         textarea.form-control {
           background-color: $dark-gray;
           color: $white;
-          font-family: monospace;
+          font-family: $edit-font;
           letter-spacing: 2px;
           margin-top: 15px;
         }
@@ -84,7 +92,6 @@ html {
         }
       }
       footer {
-        background-color: $light-gray;
         bottom: 0;
         font-size: 1.2rem;
         left: 0;
