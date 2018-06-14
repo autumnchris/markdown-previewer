@@ -1,12 +1,8 @@
 # Markdown Previewer
 
-My project for the [Build a Markdown Previewer challenge](https://www.freecodecamp.org/challenges/build-a-markdown-previewer) as part of the curriculum for the Data Visualization Certification on [Free Code Camp](https://www.freecodecamp.org).
+My project for the [Build a Markdown Previewer challenge](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer) as part of the curriculum for the Front End Libraries Certification on [Free Code Camp](https://www.freecodecamp.org).
 
 ---
-
-## User Stories
-1. I can type GitHub-flavored Markdown into a text area.
-2. I can see a preview of the output of my markdown that is updated as I type.
 
 ## Built With
 * [React](https://reactjs.org)
