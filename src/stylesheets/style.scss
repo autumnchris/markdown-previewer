@@ -37,14 +37,14 @@ html {
         margin: 28px auto 0;
         max-width: 800px;
         .nav-tabs {
-          background-color: $light-gray;
+          background: $light-gray;
           border-bottom: 1px solid $med-gray;
           padding: 10px 0 0 10px;
           li.active a,
           li.active a:hover,
           li.active a:active,
           li.active a:focus {
-            background-color: $white;
+            background: $white;
             border: 1px solid $med-gray;
             border-bottom: transparent !important;
           }
@@ -55,7 +55,7 @@ html {
             color: $dark-gray;
             padding: 12px;
             &:hover {
-              background-color: $light-gray;
+              background: $light-gray;
             }
             &:focus {
               outline: none;
@@ -71,7 +71,7 @@ html {
           }
         }
         textarea.form-control {
-          background-color: $dark-gray;
+          background: $dark-gray;
           color: $white;
           font-family: $edit-font;
           letter-spacing: 2px;
@@ -79,13 +79,23 @@ html {
         }
         .preview {
           margin-top: 20px;
+          padding: 0 20px;
+          blockquote {
+            border-left: 4px solid $med-gray;
+            padding: 10px;
+          }
+          img {
+            max-width: 500px;
+            width: 100%;
+          }
           hr {
             border-top: 1px solid $med-gray;
           }
           th {
-            background-color: $light-gray;
+            background: $light-gray;
           }
-          th, td {
+          th,
+          td {
             border: 1px solid $med-gray;
             padding: 8px;
           }
