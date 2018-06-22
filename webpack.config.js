@@ -20,13 +20,6 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpg|png|svg)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 100000,
-        }
-      },
-      {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
           use:['css-loader', 'sass-loader'],

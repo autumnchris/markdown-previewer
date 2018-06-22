@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import marked from 'marked';
 import { Tab, Tabs } from 'react-bootstrap';
 
-const freeCodeCampLogo = require('.././images/freecodecamp-logo.png');
-
 export default class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      markdownInput: `# Heading\n## Sub-heading\n\n[This is a link.](https://www.freecodecamp.org)\n\n\`This is inline code.\`\n\n\`\`\`\nThis is a code block.\n\`\`\`\n\nThis is a list:\n* item 1\n* item 2\n* item 3\n\n> This is a blockquote.\n\n![Free Code Camp logo](${freeCodeCampLogo})\n\n**This is bolded text.**`
+      markdownInput: `# Heading\n## Sub-heading\n\n[This is a link.](https://www.freecodecamp.org)\n\n\`This is inline code.\`\n\n\`\`\`\nThis is a code block.\n\`\`\`\n\nThis is a list:\n* item 1\n* item 2\n* item 3\n\n> This is a blockquote.\n\n![Free Code Camp logo](https://dl.dropbox.com/s/lei6k4qqrvo23qb/freeCodeCamp-alternative.png)\n\n**This is bolded text.**`
     };
     this.handleChange = this.handleChange.bind(this);
   }
