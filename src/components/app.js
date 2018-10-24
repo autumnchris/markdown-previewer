@@ -42,7 +42,7 @@ export default class App extends Component {
           </Tabs>
         </main>
         {/* FOOTER */}
-        <footer className="text-center">Coded by <a href="../portfolio" target="_blank">Autumn Bullard</a></footer>
+        <footer className="text-center">Coded by <a href="https://autumnbullard-portfolio.herokuapp.com" target="_blank">Autumn Bullard</a></footer>
       </div>
     );
   }
