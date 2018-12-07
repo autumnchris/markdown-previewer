@@ -5,7 +5,7 @@ My project for the [Build a Markdown Previewer challenge](https://learn.freecode
 ---
 
 ## Built With
-* [React](https://reactjs.org)
+* [React.js](https://reactjs.org)
 * [Webpack](https://webpack.js.org)
 * [Babel](https://babeljs.io)
 * [Sass](http://sass-lang.com)
