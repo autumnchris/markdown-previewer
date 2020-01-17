@@ -11,7 +11,7 @@ a:focus {
 html {
   height: 100%; }
   html body {
-    color: #333;
+    color: #333333;
     letter-spacing: 1px;
     min-height: 100%;
     padding-bottom: 60px;
@@ -27,20 +27,20 @@ html {
         max-width: 800px; }
         html body .container-fluid #tabs .nav-tabs {
           background: #f2f2f2;
-          border-bottom: 1px solid #ccc;
+          border-bottom: 1px solid #cccccc;
           padding: 10px 0 0 10px; }
           html body .container-fluid #tabs .nav-tabs li.active a,
           html body .container-fluid #tabs .nav-tabs li.active a:hover,
           html body .container-fluid #tabs .nav-tabs li.active a:active,
           html body .container-fluid #tabs .nav-tabs li.active a:focus {
-            background: #fff;
-            border: 1px solid #ccc;
+            background: white;
+            border: 1px solid #cccccc;
             border-bottom: transparent !important; }
           html body .container-fluid #tabs .nav-tabs li a,
           html body .container-fluid #tabs .nav-tabs li a:active {
             border: none;
             border-radius: 0;
-            color: #333;
+            color: #333333;
             padding: 12px; }
             html body .container-fluid #tabs .nav-tabs li a:hover,
             html body .container-fluid #tabs .nav-tabs li a:active:hover {
@@ -55,8 +55,8 @@ html {
             content: "\F06E";
             font-family: FontAwesome; }
         html body .container-fluid #tabs textarea.form-control {
-          background: #333;
-          color: #fff;
+          background: #333333;
+          color: white;
           font-family: Menlo, Courier, monospace;
           letter-spacing: 2px;
           margin-top: 15px; }
@@ -64,17 +64,17 @@ html {
           margin-top: 20px;
           padding: 0 20px; }
           html body .container-fluid #tabs .preview blockquote {
-            border-left: 4px solid #ccc;
+            border-left: 4px solid #cccccc;
             padding: 10px; }
           html body .container-fluid #tabs .preview img {
             width: 100%; }
           html body .container-fluid #tabs .preview hr {
-            border-top: 1px solid #ccc; }
+            border-top: 1px solid #cccccc; }
           html body .container-fluid #tabs .preview th {
             background: #f2f2f2; }
           html body .container-fluid #tabs .preview th,
           html body .container-fluid #tabs .preview td {
-            border: 1px solid #ccc;
+            border: 1px solid #cccccc;
             padding: 8px; }
       html body .container-fluid footer {
         bottom: 0;
