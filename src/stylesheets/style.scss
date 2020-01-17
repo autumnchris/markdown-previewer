@@ -15,7 +15,7 @@ a:focus {
 html {
   height: 100%;
   body {
-    color: change-color($grayscale, $lightness: 20%);
+    color: change-color($black, $lightness: 20%);
     letter-spacing: 1px;
     min-height: 100%;
     padding-bottom: 60px;
@@ -31,25 +31,25 @@ html {
         margin: 28px auto 0;
         max-width: 800px;
         .nav-tabs {
-          background: change-color($grayscale, $lightness: 95%);
-          border-bottom: 1px solid change-color($grayscale, $lightness: 80%);
+          background: change-color($black, $lightness: 95%);
+          border-bottom: 1px solid change-color($black, $lightness: 80%);
           padding: 10px 0 0 10px;
           li.active a,
           li.active a:hover,
           li.active a:active,
           li.active a:focus {
-            background: change-color($grayscale, $lightness: 100%);
-            border: 1px solid change-color($grayscale, $lightness: 80%);
+            background: change-color($black, $lightness: 100%);
+            border: 1px solid change-color($black, $lightness: 80%);
             border-bottom: transparent !important;
           }
           li a,
           li a:active {
             border: none;
             border-radius: 0;
-            color: change-color($grayscale, $lightness: 20%);
+            color: change-color($black, $lightness: 20%);
             padding: 12px;
             &:hover {
-              background: change-color($grayscale, $lightness: 95%);
+              background: change-color($black, $lightness: 95%);
             }
             &:focus {
               outline: none;
@@ -65,8 +65,8 @@ html {
           }
         }
         textarea.form-control {
-          background: change-color($grayscale, $lightness: 20%);
-          color: change-color($grayscale, $lightness: 100%);
+          background: change-color($black, $lightness: 20%);
+          color: change-color($black, $lightness: 100%);
           font-family: $edit-font;
           letter-spacing: 2px;
           margin-top: 15px;
@@ -75,21 +75,21 @@ html {
           margin-top: 20px;
           padding: 0 20px;
           blockquote {
-            border-left: 4px solid change-color($grayscale, $lightness: 80%);
+            border-left: 4px solid change-color($black, $lightness: 80%);
             padding: 10px;
           }
           img {
             width: 100%;
           }
           hr {
-            border-top: 1px solid change-color($grayscale, $lightness: 80%);
+            border-top: 1px solid change-color($black, $lightness: 80%);
           }
           th {
-            background: change-color($grayscale, $lightness: 95%);
+            background: change-color($black, $lightness: 95%);
           }
           th,
           td {
-            border: 1px solid change-color($grayscale, $lightness: 80%);
+            border: 1px solid change-color($black, $lightness: 80%);
             padding: 8px;
           }
         }
