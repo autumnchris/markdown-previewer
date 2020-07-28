@@ -1,7 +1,151 @@
 @import "variables";
 
-* {
+// BASE PAGE STYLES
+
+html {
+  background: transparent;
   box-sizing: border-box;
+  color: change-color($black, $lightness: 20%);
+  font-family: $main-font;
+  height: 100%;
+  letter-spacing: 1px;
+  body {
+    background: change-color($black, $lightness: 100%);
+    min-height: 100%;
+    overscroll-behavior: none;
+    padding: 0 20px;
+    position: relative;
+    header {
+      padding-top: 30px;
+      text-align: center;
+    }
+    main {
+      padding: 10px 0 6rem;
+    }
+    footer {
+      bottom: 0;
+      font-size: 0.8rem;
+      left: 0;
+      letter-spacing: 2px;
+      padding: 14px 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      box-sizing: border-box;
+      margin-top: 0;
+    }
+  }
+}
+
+// BASE ELEMENT STYLES
+
+div,
+header,
+main,
+footer,
+p,
+pre,
+form,
+textarea,
+img,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+blockquote,
+hr {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+code {
+  background: change-color($black, $lightness: 95%);
+  border-radius: 3px;
+  color: $code-text-color;
+  font-family: $edit-font;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+pre {
+  background: change-color($black, $lightness: 95%);
+  border: 1px solid change-color($black, $lightness: 80%);
+  border-radius: 4px;
+  overflow-x: auto;
+  padding: 12px;
+}
+
+pre code {
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.3;
+  white-space: pre;
+}
+
+button,
+button:hover,
+button:active,
+button:focus,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+textarea {
+  border: 0;
+  border-radius: 0;
+  color: change-color($black, $lightness: 20%);
+  letter-spacing: 1px;
+  line-height: 1.3;
+  padding: 10px;
+  width: 100%;
+  &::placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  thead {
+    background: change-color($black, $lightness: 95%);
+  }
+  th,
+  td {
+    border: 1px solid change-color($black, $lightness: 80%);
+    padding: 10px;
+  }
+}
+
+blockquote {
+  border-left: 5px solid change-color($black, $lightness: 80%);
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 10px;
+}
+
+blockquote p {
+  margin: 5px 0;
 }
 
 a,
@@ -10,101 +154,61 @@ a:hover,
 a:active,
 a:focus {
   color: $blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-html {
-  height: 100%;
-  body {
-    color: change-color($black, $lightness: 20%);
-    letter-spacing: 1px;
-    min-height: 100%;
-    padding-bottom: 60px;
-    position: relative;
-    .container-fluid {
-      padding: 0 20px;
-      .app-heading {
-        font-size: 2rem;
-        font-weight: 500;
-        letter-spacing: 2px;
-      }
-      #tabs {
-        margin: 28px auto 0;
-        max-width: 800px;
-        .nav-tabs {
-          background: change-color($black, $lightness: 95%);
-          border-bottom: 1px solid change-color($black, $lightness: 80%);
-          padding: 10px 0 0 10px;
-          li.active a,
-          li.active a:hover,
-          li.active a:active,
-          li.active a:focus {
-            background: change-color($black, $lightness: 100%);
-            border: 1px solid change-color($black, $lightness: 80%);
-            border-bottom: transparent !important;
-          }
-          li a,
-          li a:active {
-            border: none;
-            border-radius: 0;
-            color: change-color($black, $lightness: 20%);
-            padding: 12px;
-            &:hover {
-              background: change-color($black, $lightness: 95%);
-            }
-            &:focus {
-              outline: none;
-            }
-          }
-          li:first-child a:before {
-            content: "\f121";
-            font-family: FontAwesome;
-          }
-          li:nth-child(2) a:before {
-            content: "\f06e";
-            font-family: FontAwesome;
-          }
-        }
-        textarea.form-control {
-          background: change-color($black, $lightness: 20%);
-          color: change-color($black, $lightness: 100%);
-          font-family: $edit-font;
-          letter-spacing: 2px;
-          margin-top: 15px;
-        }
-        .preview {
-          margin-top: 20px;
-          padding: 0 20px;
-          blockquote {
-            border-left: 4px solid change-color($black, $lightness: 80%);
-            padding: 10px;
-          }
-          img {
-            width: 100%;
-          }
-          hr {
-            border-top: 1px solid change-color($black, $lightness: 80%);
-          }
-          th {
-            background: change-color($black, $lightness: 95%);
-          }
-          th,
-          td {
-            border: 1px solid change-color($black, $lightness: 80%);
-            padding: 8px;
-          }
-        }
-      }
-      footer {
-        bottom: 0;
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+// SPECIFIC ELEMENT STYLES
+
+.app-heading {
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.react-tabs {
+  margin: 0 auto;
+  max-width: 800px;
+  .react-tabs__tab-list {
+    background: change-color($black, $lightness: 95%);
+    border-bottom: 1px solid change-color($black, $lightness: 80%);
+    padding: 10px 10px 0;
+    .react-tabs__tab {
+      padding: 12px;
+      .material-icons {
         font-size: 1.2rem;
-        left: 0;
-        letter-spacing: 2px;
-        margin: 0;
-        padding: 12px 0;
-        position: absolute;
-        right: 0;
-        width: 100%;
+        vertical-align: bottom;
       }
     }
+    .react-tabs__tab--selected {
+      border-color: change-color($black, $lightness: 80%);
+      border-radius: 0;
+      color: change-color($black, $lightness: 20%);
+    }
+  }
+  .markdown-form {
+    padding-top: 20px;
+    .markdown-input {
+      background: change-color($black, $lightness: 20%);
+      border-radius: 4px;
+      color: change-color($black, $lightness: 100%);
+      font-family: $edit-font;
+      letter-spacing: 2px;
+    }
+  }
+  .preview-content {
+    padding: 20px 20px 0;
   }
 }

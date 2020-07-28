@@ -9,10 +9,10 @@ My project for the [Build a Markdown Previewer challenge](https://learn.freecode
 * [Webpack](https://webpack.js.org)
 * [Babel](https://babeljs.io)
 * [Sass](http://sass-lang.com)
-* [Bootstrap](https://getbootstrap.com)
 * [marked](https://www.npmjs.com/package/marked)
-* [React-Bootstrap](https://react-bootstrap.github.io)
-* [Font Awesome](https://fontawesome.com)
+* [Normalize.css](https://necolas.github.io/normalize.css)
+* [Google Material Icons](https://material.io/icons)
+* [Google Fonts](https://fonts.google.com)
 
 ## Demo
 
