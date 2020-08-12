@@ -16,7 +16,7 @@ const PreviewerContent = ({ markdownInput, handleChange }) => {
       </TabList>
       <TabPanel>
         <form className="markdown-form">
-          <textarea className="markdown-input" onChange={(event) => handleChange(event)} value={markdownInput} rows="20" aria-label="enter GitHub Flavored Markdown to preview" />
+          <textarea className="markdown-input" onChange={(event) => handleChange(event)} value={markdownInput} rows="20" placeholder="Enter GitHub Flavored Markdown syntax to preview..." aria-label="Enter GitHub Flavored Markdown syntax to preview" />
         </form>
       </TabPanel>
       <TabPanel>
