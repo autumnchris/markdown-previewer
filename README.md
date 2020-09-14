@@ -12,6 +12,7 @@ My project for the [Build a Markdown Previewer challenge](https://learn.freecode
 * [marked](https://www.npmjs.com/package/marked)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Material Icons](https://material.io/icons)
+* [Font Awesome](https://fontawesome.com)
 * [Google Fonts](https://fonts.google.com)
 
 ## Demo
