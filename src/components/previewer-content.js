@@ -20,7 +20,7 @@ const PreviewerContent = ({ markdownInput, handleChange }) => {
         </form>
       </TabPanel>
       <TabPanel>
-        <div className="preview-content" dangerouslySetInnerHTML={{__html: marked(markdownInput, {breaks: true, renderer})}} ></div>
+        <div className="preview-content" dangerouslySetInnerHTML={{__html: marked(markdownInput, {breaks: true, renderer})}}></div>
       </TabPanel>
     </Tabs>
   );

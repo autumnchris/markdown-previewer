@@ -1,35 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PreviewerContent from './previewer-content';
 
-class App extends React.Component {
+const App = () => {
+  const [markdownInput, setMarkdownInput] = useState('');
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      markdownInput: ''
-    };
-    this.handleChange = this.handleChange.bind(this);
+  function handleChange(event) {
+    setMarkdownInput(event.target.value);
   }
 
-  handleChange(event) {
-    this.setState({
-      markdownInput: event.target.value
-    });
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <header>
-          <h1 className="app-heading">Markdown Previewer</h1>
-        </header>
-        <main>
-          <PreviewerContent markdownInput={this.state.markdownInput} handleChange={this.handleChange} />
-        </main>
-        <footer>Created by <a href="https://autumnbullard-portfolio.herokuapp.com" target="_blank">Autumn Bullard</a> &copy; {new Date().getFullYear()}</footer>
-      </React.Fragment>
-    );
-  }
+  return (
+    <React.Fragment>
+      <header>
+        <h1 className="app-heading">Markdown Previewer</h1>
+      </header>
+      <main>
+        <PreviewerContent markdownInput={markdownInput} handleChange={handleChange} />
+      </main>
+      <footer>Created by <a href="https://autumnbullard-portfolio.herokuapp.com" target="_blank">Autumn Bullard</a> &copy; {new Date().getFullYear()}</footer>
+    </React.Fragment>
+  );
 }
 
 export default App;
