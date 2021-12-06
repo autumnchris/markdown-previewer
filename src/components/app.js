@@ -1,20 +1,14 @@
-import React, { useState } from 'react';
-import PreviewerContent from './previewer-content';
+import React from 'react';
+import TabsContainer from './tabs-container';
 
 const App = () => {
-  const [markdownInput, setMarkdownInput] = useState('');
-
-  function handleChange(event) {
-    setMarkdownInput(event.target.value);
-  }
-
   return (
     <React.Fragment>
       <header>
         <h1 className="app-heading">Markdown Previewer</h1>
       </header>
       <main>
-        <PreviewerContent markdownInput={markdownInput} handleChange={handleChange} />
+        <TabsContainer />
       </main>
       <footer>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a> &copy; {new Date().getFullYear()}</footer>
     </React.Fragment>
