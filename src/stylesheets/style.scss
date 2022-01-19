@@ -156,12 +156,11 @@ table {
 blockquote {
   border-left: 5px solid change-color($black, $lightness: 80%);
   font-size: 1.2rem;
-  font-style: italic;
   padding: 10px;
 }
 
 blockquote p {
-  margin: 5px 0;
+  margin: 0;
 }
 
 a,
