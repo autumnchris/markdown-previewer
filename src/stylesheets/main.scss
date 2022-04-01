@@ -1,0 +1,84 @@
+// STYLES FOR PAGE'S MAIN CONTENT
+
+.app-heading {
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+// Form styles
+textarea {
+  border: 0;
+  border-radius: 0;
+  color: change-color($black, $lightness: 20%);
+  letter-spacing: 1px;
+  line-height: 1.3;
+  padding: 10px;
+  width: 100%;
+  &::-webkit-input-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &::-moz-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &:-ms-input-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &::-ms-input-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &::placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+}
+
+// Tabs styles
+.tabs-container {
+  margin: 0 auto;
+  max-width: 800px;
+  .tabs {
+    background: change-color($black, $lightness: 95%);
+    border-bottom: 1px solid change-color($black, $lightness: 80%);
+    display: flex;
+    padding: 10px 10px 0;
+    .tab {
+      background: transparent;
+      border: 1px solid transparent;
+      bottom: -1px;
+      cursor: pointer;
+      padding: 12px;
+      position: relative;
+      .material-icons {
+        font-size: 1.2rem;
+        vertical-align: bottom;
+      }
+      &.selected {
+        background: change-color($black, $lightness: 100%); ;
+        border: 1px solid change-color($black, $lightness: 80%);
+        border-bottom: 1px solid change-color($black, $lightness: 100%);
+        border-radius: 0;
+        color: change-color($black, $lightness: 20%);     
+      }
+      &:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-weight: 900;
+        color: $blue;
+      }
+    }
+  }
+  .tabs-content {
+    padding-top: 30px;
+    .markdown-form {
+      .markdown-input {
+        background: change-color($black, $lightness: 20%);
+        border-radius: 4px;
+        color: change-color($black, $lightness: 100%);
+        font-family: $edit-font;
+        letter-spacing: 2px;
+      }
+    }
+    .preview-content {
+      padding: 0 20px 0;
+    }
+  }
+}

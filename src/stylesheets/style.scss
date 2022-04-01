@@ -2,16 +2,19 @@
 
 // BASE PAGE STYLES
 
-html {
-  background: transparent;
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: change-color($black, $lightness: 20%);
+}
+
+html {
+  background: transparent;
   font-family: $main-font;
   height: 100%;
   letter-spacing: 1px;
   body {
     background: change-color($black, $lightness: 100%);
+    color: change-color($black, $lightness: 20%);
     min-height: 100%;
     -ms-scroll-chaining: none;
     overscroll-behavior: none;
@@ -41,126 +44,9 @@ html {
     h4,
     h5,
     h6 {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
       margin-top: 0;
     }
   }
-}
-
-// BASE ELEMENT STYLES
-
-div,
-header,
-main,
-footer,
-p,
-pre,
-form,
-textarea,
-img,
-ul,
-ol,
-li,
-table,
-thead,
-tbody,
-tr,
-th,
-td,
-blockquote,
-hr {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-code {
-  background: change-color($black, $lightness: 95%);
-  border-radius: 3px;
-  color: $code-text-color;
-  font-family: $edit-font;
-  padding: 2px;
-  white-space: nowrap;
-}
-
-pre {
-  background: change-color($black, $lightness: 95%);
-  border: 1px solid change-color($black, $lightness: 80%);
-  border-radius: 4px;
-  overflow-x: auto;
-  padding: 12px;
-}
-
-pre code {
-  background: transparent;
-  border-radius: 0;
-  line-height: 1.3;
-  white-space: pre;
-}
-
-button,
-button:hover,
-button:active,
-button:focus,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-}
-
-textarea {
-  border: 0;
-  border-radius: 0;
-  color: change-color($black, $lightness: 20%);
-  letter-spacing: 1px;
-  line-height: 1.3;
-  padding: 10px;
-  width: 100%;
-  &::-webkit-input-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &::-moz-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &:-ms-input-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &::-ms-input-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &::placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  thead {
-    background: change-color($black, $lightness: 95%);
-  }
-  th,
-  td {
-    border: 1px solid change-color($black, $lightness: 80%);
-    padding: 10px;
-  }
-}
-
-blockquote {
-  border-left: 5px solid change-color($black, $lightness: 80%);
-  font-size: 1.2rem;
-  padding: 10px;
-}
-
-blockquote p {
-  margin: 0;
 }
 
 a,
@@ -187,70 +73,78 @@ textarea:focus,
   outline: none;
 }
 
+button,
+button:hover,
+button:active,
+button:focus,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  thead {
+    background: change-color($black, $lightness: 95%);
+  }
+  th,
+  td {
+    border: 1px solid change-color($black, $lightness: 80%);
+    padding: 10px;
+  }
+}
+
+blockquote {
+  border-left: 5px solid change-color($black, $lightness: 80%);
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+// Code styles
+code {
+  background: change-color($black, $lightness: 95%);
+  border-radius: 3px;
+  color: $code-text-color;
+  font-family: $edit-font;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+pre {
+  background: change-color($black, $lightness: 95%);
+  border: 1px solid change-color($black, $lightness: 80%);
+  border-radius: 4px;
+  overflow-x: auto;
+  padding: 12px;
+}
+
+pre code {
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.3;
+  white-space: pre;
+}
+
+// Message styles
 .message {
   border-radius: 5px;
   line-height: 1.55;
   margin: 20px auto;
   max-width: 800px;
   padding: 15px 10px;
-}
-
-// SPECIFIC ELEMENT STYLES
-
-.app-heading {
-  font-size: 1.3rem;
-  letter-spacing: 3px;
-}
-
-.tabs-container {
-  margin: 0 auto;
-  max-width: 800px;
-  .tabs {
-    background: change-color($black, $lightness: 95%);
-    border-bottom: 1px solid change-color($black, $lightness: 80%);
-    display: flex;
-    padding: 10px 10px 0;
-    .tab {
-      background: transparent;
-      border: 1px solid transparent;
-      bottom: -1px;
-      cursor: pointer;
-      padding: 12px;
-      position: relative;
-      .material-icons {
-        font-size: 1.2rem;
-        vertical-align: bottom;
-      }
-      &.selected {
-        background: change-color($black, $lightness: 100%); ;
-        border: 1px solid change-color($black, $lightness: 80%);
-        border-bottom: 1px solid change-color($black, $lightness: 100%);
-        border-radius: 0;
-        color: change-color($black, $lightness: 20%);     
-      }
-      &:focus {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        font-weight: 900;
-        color: $blue;
-      }
-    }
-  }
-  .tabs-content {
-    padding-top: 30px;
-    .markdown-form {
-      .markdown-input {
-        background: change-color($black, $lightness: 20%);
-        border-radius: 4px;
-        color: change-color($black, $lightness: 100%);
-        font-family: $edit-font;
-        letter-spacing: 2px;
-      }
-    }
-    .preview-content {
-      padding: 0 20px 0;
-    }
-  }
 }
 
 .info-message {
@@ -270,3 +164,5 @@ noscript .info-message {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+@import "main";
