@@ -12,6 +12,7 @@ Inspired by the [Build a Markdown Previewer challenge](https://learn.freecodecam
 * [Babel](https://babeljs.io)
 * [Sass](http://sass-lang.com)
 * [marked](https://www.npmjs.com/package/marked)
+* LocalStorage
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Material Icons](https://fonts.google.com/icons)
 * [Font Awesome](https://fontawesome.com)

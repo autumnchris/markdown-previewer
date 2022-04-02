@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import EditContainer from './edit-container';
 import PreviewContainer from './preview-container';
 
 const TabsContainer = () => {
-  const [markdownInput, setMarkdownInput] = useState('');
+  const [markdownInput, setMarkdownInput] = useState(JSON.parse(localStorage.getItem('markdownCode')) || '');
   const [openTab, setOpenTab] = useState('edit');
+
+  useEffect(() => {
+    localStorage.setItem('markdownCode', JSON.stringify(markdownInput));
+  }, [markdownInput]);
 
   function handleChange(event) {
     setMarkdownInput(event.target.value);
