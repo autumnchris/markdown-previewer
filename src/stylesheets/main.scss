@@ -5,7 +5,38 @@
   letter-spacing: 3px;
 }
 
+// Button styles
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: change-color($black, $lightness: 95%);
+  border: 1px solid change-color($black, $lightness: 80%);
+  border-radius: 5px;
+  color: change-color($black, $lightness: 20%);
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 6px 12px;
+  width: auto;
+  &:hover {
+    background: change-color($black, $lightness: 93%);
+    text-decoration: none;
+  }
+}
+
 // Form styles
+.markdown-form {
+  padding-bottom: 5px;
+}
+
 textarea {
   border: 0;
   border-radius: 0;
