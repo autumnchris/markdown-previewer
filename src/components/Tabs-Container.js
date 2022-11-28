@@ -21,8 +21,8 @@ const TabsContainer = () => {
   return (
     <div className="tabs-container">
       <div className="tabs">
-        <div className={`tab edit-tab ${openTab === 'edit' && 'selected'}`} onClick={() => setOpenTab('edit')} onKeyDown={(event) => handleKeyDown(event, 'edit')} tabIndex="0"><span className="material-icons">create</span> Edit</div>
-        <div className={`tab preview-tab ${openTab === 'preview' && 'selected'}`} onClick={() => setOpenTab('preview')} onKeyDown={(event) => handleKeyDown(event, 'preview')} tabIndex="0"><span className="material-icons">visibility</span> Preview</div>
+        <div className={`tab edit-tab ${openTab === 'edit' && 'selected'}`} onClick={() => setOpenTab('edit')} onKeyDown={(event) => handleKeyDown(event, 'edit')} tabIndex="0"><span className="material-icons" aria-hidden="true">create</span> Edit</div>
+        <div className={`tab preview-tab ${openTab === 'preview' && 'selected'}`} onClick={() => setOpenTab('preview')} onKeyDown={(event) => handleKeyDown(event, 'preview')} tabIndex="0"><span className="material-icons" aria-hidden="true">visibility</span> Preview</div>
       </div>
       <div className="tabs-content">
         {openTab === 'edit' ? <EditContainer markdownInput={markdownInput} handleChange={handleChange} /> : <PreviewContainer markdownInput={markdownInput} />}
