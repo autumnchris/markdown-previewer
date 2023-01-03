@@ -1,5 +1,5 @@
 import React from 'react';
-import TabsContainer from './Tabs-Container';
+import TabsContainer from './TabsContainer';
 
 const App = () => {
   return (

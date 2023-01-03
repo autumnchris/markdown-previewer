@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import EditContainer from './Edit-Container';
-import PreviewContainer from './Preview-Container';
+import EditContainer from './EditContainer';
+import PreviewContainer from './PreviewContainer';
 
 const TabsContainer = () => {
   const [markdownInput, setMarkdownInput] = useState(JSON.parse(localStorage.getItem('markdownCode')) || '');
