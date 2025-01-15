@@ -8,9 +8,13 @@ Inspired by the [Build a Markdown Previewer challenge](https://learn.freecodecam
 
 ## Built With
 * [React.js](https://reactjs.org)
+* JavaScript
+* CSS3
+* HTML5
+* [Sass](http://sass-lang.com)
+* [Node.js](https://nodejs.org/en)
 * [Webpack](https://webpack.js.org)
 * [Babel](https://babeljs.io)
-* [Sass](http://sass-lang.com)
 * [marked](https://www.npmjs.com/package/marked)
 * LocalStorage
 * [Normalize.css](https://necolas.github.io/normalize.css)
