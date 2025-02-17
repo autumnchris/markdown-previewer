@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Oxygen;
+  src: url(.././assets/fonts/Oxygen-Regular.ttf);
+}
+@font-face {
+  font-family: "Oxygen Bold";
+  src: url(.././assets/fonts/Oxygen-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Oxygen Mono";
+  src: url(.././assets/fonts/OxygenMono-Regular.ttf);
+}
+
 @import "variables";
 
 // BASE PAGE STYLES
@@ -45,6 +59,10 @@ html {
     h5,
     h6 {
       margin-top: 0;
+    }
+    h1 {
+      font-family: $main-font-bold;
+      font-weight: 700;
     }
   }
 }

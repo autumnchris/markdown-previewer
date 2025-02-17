@@ -18,7 +18,6 @@ Inspired by the [Build a Markdown Previewer challenge](https://learn.freecodecam
 * [marked](https://www.npmjs.com/package/marked)
 * LocalStorage
 * [Normalize.css](https://necolas.github.io/normalize.css)
-* [Material Icons](https://fonts.google.com/icons)
 * [Font Awesome](https://fontawesome.com)
 * [Google Fonts](https://fonts.google.com)
 

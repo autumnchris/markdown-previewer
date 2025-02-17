@@ -78,10 +78,6 @@ textarea {
       cursor: pointer;
       padding: 12px;
       position: relative;
-      .material-icons {
-        font-size: 1.2rem;
-        vertical-align: bottom;
-      }
       &.selected {
         background: change-color($black, $lightness: 100%); ;
         border: 1px solid change-color($black, $lightness: 80%);
@@ -92,6 +88,7 @@ textarea {
       &:focus {
         -webkit-box-shadow: none;
         box-shadow: none;
+        font-family: $main-font-bold;
         font-weight: 700;
         color: $blue;
       }
