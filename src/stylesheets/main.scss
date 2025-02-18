@@ -25,10 +25,10 @@
   letter-spacing: 1px;
   line-height: normal;
   padding: 6px 12px;
+  text-decoration: none;
   width: auto;
   &:hover {
     background: change-color($black, $lightness: 93%);
-    text-decoration: none;
   }
 }
 
